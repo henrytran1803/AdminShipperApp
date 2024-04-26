@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2CC5E732BDBA1A300D38727 /* AdminShipperAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E722BDBA1A300D38727 /* AdminShipperAppApp.swift */; };
+		D2CC5E752BDBA1A300D38727 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E742BDBA1A300D38727 /* ContentView.swift */; };
+		D2CC5E772BDBA1A500D38727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC5E762BDBA1A500D38727 /* Assets.xcassets */; };
+		D2CC5E7B2BDBA1A500D38727 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC5E7A2BDBA1A500D38727 /* Preview Assets.xcassets */; };
+		D2CC5E852BDBA1A600D38727 /* AdminShipperAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E842BDBA1A600D38727 /* AdminShipperAppTests.swift */; };
+		D2CC5E8F2BDBA1A600D38727 /* AdminShipperAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E8E2BDBA1A600D38727 /* AdminShipperAppUITests.swift */; };
+		D2CC5E912BDBA1A600D38727 /* AdminShipperAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E902BDBA1A600D38727 /* AdminShipperAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2CC5E812BDBA1A600D38727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CC5E672BDBA1A300D38727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CC5E6E2BDBA1A300D38727;
+			remoteInfo = AdminShipperApp;
+		};
+		D2CC5E8B2BDBA1A600D38727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CC5E672BDBA1A300D38727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CC5E6E2BDBA1A300D38727;
+			remoteInfo = AdminShipperApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2CC5E6F2BDBA1A300D38727 /* AdminShipperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminShipperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CC5E722BDBA1A300D38727 /* AdminShipperAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminShipperAppApp.swift; sourceTree = "<group>"; };
+		D2CC5E742BDBA1A300D38727 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2CC5E762BDBA1A500D38727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2CC5E782BDBA1A500D38727 /* AdminShipperApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdminShipperApp.entitlements; sourceTree = "<group>"; };
+		D2CC5E7A2BDBA1A500D38727 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2CC5E802BDBA1A600D38727 /* AdminShipperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdminShipperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CC5E842BDBA1A600D38727 /* AdminShipperAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminShipperAppTests.swift; sourceTree = "<group>"; };
+		D2CC5E8A2BDBA1A600D38727 /* AdminShipperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdminShipperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CC5E8E2BDBA1A600D38727 /* AdminShipperAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminShipperAppUITests.swift; sourceTree = "<group>"; };
+		D2CC5E902BDBA1A600D38727 /* AdminShipperAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminShipperAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2CC5E6C2BDBA1A300D38727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E7D2BDBA1A600D38727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E872BDBA1A600D38727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2CC5E662BDBA1A300D38727 = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E712BDBA1A300D38727 /* AdminShipperApp */,
+				D2CC5E832BDBA1A600D38727 /* AdminShipperAppTests */,
+				D2CC5E8D2BDBA1A600D38727 /* AdminShipperAppUITests */,
+				D2CC5E702BDBA1A300D38727 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2CC5E702BDBA1A300D38727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E6F2BDBA1A300D38727 /* AdminShipperApp.app */,
+				D2CC5E802BDBA1A600D38727 /* AdminShipperAppTests.xctest */,
+				D2CC5E8A2BDBA1A600D38727 /* AdminShipperAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2CC5E712BDBA1A300D38727 /* AdminShipperApp */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E722BDBA1A300D38727 /* AdminShipperAppApp.swift */,
+				D2CC5E742BDBA1A300D38727 /* ContentView.swift */,
+				D2CC5E762BDBA1A500D38727 /* Assets.xcassets */,
+				D2CC5E782BDBA1A500D38727 /* AdminShipperApp.entitlements */,
+				D2CC5E792BDBA1A500D38727 /* Preview Content */,
+			);
+			path = AdminShipperApp;
+			sourceTree = "<group>";
+		};
+		D2CC5E792BDBA1A500D38727 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E7A2BDBA1A500D38727 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2CC5E832BDBA1A600D38727 /* AdminShipperAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E842BDBA1A600D38727 /* AdminShipperAppTests.swift */,
+			);
+			path = AdminShipperAppTests;
+			sourceTree = "<group>";
+		};
+		D2CC5E8D2BDBA1A600D38727 /* AdminShipperAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC5E8E2BDBA1A600D38727 /* AdminShipperAppUITests.swift */,
+				D2CC5E902BDBA1A600D38727 /* AdminShipperAppUITestsLaunchTests.swift */,
+			);
+			path = AdminShipperAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2CC5E6E2BDBA1A300D38727 /* AdminShipperApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CC5E942BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperApp" */;
+			buildPhases = (
+				D2CC5E6B2BDBA1A300D38727 /* Sources */,
+				D2CC5E6C2BDBA1A300D38727 /* Frameworks */,
+				D2CC5E6D2BDBA1A300D38727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdminShipperApp;
+			productName = AdminShipperApp;
+			productReference = D2CC5E6F2BDBA1A300D38727 /* AdminShipperApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2CC5E7F2BDBA1A600D38727 /* AdminShipperAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CC5E972BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperAppTests" */;
+			buildPhases = (
+				D2CC5E7C2BDBA1A600D38727 /* Sources */,
+				D2CC5E7D2BDBA1A600D38727 /* Frameworks */,
+				D2CC5E7E2BDBA1A600D38727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CC5E822BDBA1A600D38727 /* PBXTargetDependency */,
+			);
+			name = AdminShipperAppTests;
+			productName = AdminShipperAppTests;
+			productReference = D2CC5E802BDBA1A600D38727 /* AdminShipperAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2CC5E892BDBA1A600D38727 /* AdminShipperAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CC5E9A2BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperAppUITests" */;
+			buildPhases = (
+				D2CC5E862BDBA1A600D38727 /* Sources */,
+				D2CC5E872BDBA1A600D38727 /* Frameworks */,
+				D2CC5E882BDBA1A600D38727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CC5E8C2BDBA1A600D38727 /* PBXTargetDependency */,
+			);
+			name = AdminShipperAppUITests;
+			productName = AdminShipperAppUITests;
+			productReference = D2CC5E8A2BDBA1A600D38727 /* AdminShipperAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2CC5E672BDBA1A300D38727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D2CC5E6E2BDBA1A300D38727 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D2CC5E7F2BDBA1A600D38727 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D2CC5E6E2BDBA1A300D38727;
+					};
+					D2CC5E892BDBA1A600D38727 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D2CC5E6E2BDBA1A300D38727;
+					};
+				};
+			};
+			buildConfigurationList = D2CC5E6A2BDBA1A300D38727 /* Build configuration list for PBXProject "AdminShipperApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2CC5E662BDBA1A300D38727;
+			productRefGroup = D2CC5E702BDBA1A300D38727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2CC5E6E2BDBA1A300D38727 /* AdminShipperApp */,
+				D2CC5E7F2BDBA1A600D38727 /* AdminShipperAppTests */,
+				D2CC5E892BDBA1A600D38727 /* AdminShipperAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2CC5E6D2BDBA1A300D38727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC5E7B2BDBA1A500D38727 /* Preview Assets.xcassets in Resources */,
+				D2CC5E772BDBA1A500D38727 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E7E2BDBA1A600D38727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E882BDBA1A600D38727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2CC5E6B2BDBA1A300D38727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC5E752BDBA1A300D38727 /* ContentView.swift in Sources */,
+				D2CC5E732BDBA1A300D38727 /* AdminShipperAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E7C2BDBA1A600D38727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC5E852BDBA1A600D38727 /* AdminShipperAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CC5E862BDBA1A600D38727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC5E912BDBA1A600D38727 /* AdminShipperAppUITestsLaunchTests.swift in Sources */,
+				D2CC5E8F2BDBA1A600D38727 /* AdminShipperAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CC5E822BDBA1A600D38727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CC5E6E2BDBA1A300D38727 /* AdminShipperApp */;
+			targetProxy = D2CC5E812BDBA1A600D38727 /* PBXContainerItemProxy */;
+		};
+		D2CC5E8C2BDBA1A600D38727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CC5E6E2BDBA1A300D38727 /* AdminShipperApp */;
+			targetProxy = D2CC5E8B2BDBA1A600D38727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2CC5E922BDBA1A600D38727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2CC5E932BDBA1A600D38727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D2CC5E952BDBA1A600D38727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdminShipperApp/AdminShipperApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdminShipperApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2CC5E962BDBA1A600D38727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdminShipperApp/AdminShipperApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdminShipperApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2CC5E982BDBA1A600D38727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdminShipperApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdminShipperApp";
+			};
+			name = Debug;
+		};
+		D2CC5E992BDBA1A600D38727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdminShipperApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdminShipperApp";
+			};
+			name = Release;
+		};
+		D2CC5E9B2BDBA1A600D38727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdminShipperApp;
+			};
+			name = Debug;
+		};
+		D2CC5E9C2BDBA1A600D38727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YAH93RZF3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.AdminShipperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdminShipperApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2CC5E6A2BDBA1A300D38727 /* Build configuration list for PBXProject "AdminShipperApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CC5E922BDBA1A600D38727 /* Debug */,
+				D2CC5E932BDBA1A600D38727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CC5E942BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CC5E952BDBA1A600D38727 /* Debug */,
+				D2CC5E962BDBA1A600D38727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CC5E972BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CC5E982BDBA1A600D38727 /* Debug */,
+				D2CC5E992BDBA1A600D38727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CC5E9A2BDBA1A600D38727 /* Build configuration list for PBXNativeTarget "AdminShipperAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CC5E9B2BDBA1A600D38727 /* Debug */,
+				D2CC5E9C2BDBA1A600D38727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2CC5E672BDBA1A300D38727 /* Project object */;
+}
