@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Black and Green Bold Typographic Food Logo (1) 2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Black and Green Bold Typographic Food Logo (1) 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Black and Green Bold Typographic Food Logo (1).png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

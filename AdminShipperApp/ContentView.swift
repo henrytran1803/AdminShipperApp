@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        let login = UserDefaults.standard.bool(forKey: "isLogin")
+        let role = UserDefaults.standard.string(forKey: "role")
+        if login {
+            if role == "shiper" {
+                HomeShiperView()
+            }else {
+                HomeAdminView()
+            }
+        }else {
+            WelcomeView()
         }
-        .padding()
+        
     }
 }
 
