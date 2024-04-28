@@ -7,9 +7,9 @@
 
 import SwiftUI
 enum TabAdmin: String, CaseIterable {
-    case cate
-    case product
+    case manager
     case order
+    case setting
 }
 struct CustomTabBar: View {
     @Binding var selectedTab: TabAdmin
@@ -35,8 +35,10 @@ struct CustomTabBar: View {
                 }
             }
             .frame(width: nil, height: 70)
-            .background(Color("bgproduct"))
+            .background(Color("buttonwelcome"))
             .cornerRadius(20)
+           
+            
             .padding()
         }
     }

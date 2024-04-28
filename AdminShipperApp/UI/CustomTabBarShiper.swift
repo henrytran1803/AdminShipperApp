@@ -35,7 +35,7 @@ struct CustomTabbarShiper: View{
                 }
             }
             .frame(width: nil, height: 70)
-            .background(Color("bgproduct"))
+            .background(Color("buttonwelcome"))
             .cornerRadius(20)
             .padding()
         }
