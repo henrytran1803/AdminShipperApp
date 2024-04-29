@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 enum TabShiper: String, CaseIterable {
-    case home
-    case history
-    case setting
+    case house
+    case shippingbox
+    case ellipsisCircle = "ellipsis.circle"
 }
 struct CustomTabbarShiper: View{
     @Binding var selectedTab: TabShiper
@@ -22,9 +22,9 @@ struct CustomTabbarShiper: View{
             HStack {
                 ForEach(TabShiper.allCases, id: \.rawValue) { tab in
                     Spacer()
-                    Image(selectedTab == tab ? fillImage : tab.rawValue)
+                    Image(systemName:  selectedTab == tab ? fillImage : tab.rawValue)
                         .scaleEffect(tab == selectedTab ? 1.25 : 1.0)
-                        .foregroundColor(tab == selectedTab ? .white : .gray)
+                        .foregroundColor( .white)
                         .font(.system(size: 20))
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.1)) {
@@ -39,5 +39,10 @@ struct CustomTabbarShiper: View{
             .cornerRadius(20)
             .padding()
         }
+    }
+}
+struct CustomTabbarShiper_Previews: PreviewProvider {
+    static var previews: some View {
+        CustomTabbarShiper(selectedTab: .constant( TabShiper.house))
     }
 }

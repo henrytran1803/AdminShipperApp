@@ -120,7 +120,6 @@ struct SignIn: View {
                 .fullScreenCover(isPresented: $isLoginAdmin, content: {
                     HomeAdminView()
                 })
-
         }.ignoresSafeArea(.all)
            
     }

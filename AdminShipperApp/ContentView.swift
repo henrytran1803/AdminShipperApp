@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var alertVerify = false
     var body: some View {
         let login = UserDefaults.standard.bool(forKey: "isLogin")
         let role = UserDefaults.standard.string(forKey: "role")
+        let verify = UserDefaults.standard.string(forKey: "verify")
         if login {
             if role == "shiper" {
-                HomeShiperView()
+                TabBarShiperView()
             }else {
-                HomeAdminView()
+                TabBarAdminView()
             }
         }else {
             WelcomeView()
         }
-        
+            
     }
 }
 

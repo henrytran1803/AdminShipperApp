@@ -1,14 +1,14 @@
 //
-//  TabBarAdminView.swift
+//  TabBarShiperView.swift
 //  AdminShipperApp
 //
-//  Created by Tran Viet Anh on 28/04/2024.
+//  Created by Tran Viet Anh on 29/04/2024.
 //
 
 import SwiftUI
 
-struct TabBarAdminView: View {
-    @State private var tabSelected: TabAdmin = .manager
+struct TabBarShiperView: View {
+    @State private var tabSelected: TabShiper = .house
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -18,27 +18,24 @@ struct TabBarAdminView: View {
         ZStack {
             VStack {
                 switch tabSelected {
-                case .manager:
+                case .house:
+                    HomeShiperView()
+                case .shippingbox:
                     HomeAdminView()
-                case .order:
-                    VerifyShiper()
-                case .setting:
-                    OrderManagerView()
-                case .setting1:
+                case .ellipsisCircle:
                     SettingView()
                 }
-
+                
                 Spacer()
             }
             VStack {
                 Spacer()
-                CustomTabBar(selectedTab: $tabSelected)
+                CustomTabbarShiper(selectedTab: $tabSelected)
                 
             }
         }.ignoresSafeArea()
     }
 }
-
 #Preview {
-    TabBarAdminView()
+    TabBarShiperView()
 }

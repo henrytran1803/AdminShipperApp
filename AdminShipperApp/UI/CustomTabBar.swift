@@ -10,6 +10,7 @@ enum TabAdmin: String, CaseIterable {
     case manager
     case order
     case setting
+    case setting1
 }
 struct CustomTabBar: View {
     @Binding var selectedTab: TabAdmin
