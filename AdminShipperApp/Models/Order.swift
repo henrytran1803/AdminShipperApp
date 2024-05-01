@@ -37,7 +37,7 @@ struct Oder: Codable, Hashable {
     var total: Double
     var discount :  Double
     var date: Timestamp
-    var products : [Product]
+//    var products : [Product]
     var status : StatusPayment
     var payment : Payment
 }

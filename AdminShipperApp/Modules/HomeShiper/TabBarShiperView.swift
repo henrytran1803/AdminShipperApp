@@ -21,7 +21,7 @@ struct TabBarShiperView: View {
                 case .house:
                     HomeShiperView()
                 case .shippingbox:
-                    HomeAdminView()
+                    AllOrderShiper()
                 case .ellipsisCircle:
                     SettingView()
                 }

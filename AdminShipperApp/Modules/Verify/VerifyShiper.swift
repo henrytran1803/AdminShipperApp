@@ -9,17 +9,12 @@ import SwiftUI
 
 struct VerifyShiper: View {
     @ObservedObject var shiperMV = ShiperMV()
+    @State var isLoading = false
+    
     var body: some View {
         NavigationView {
-            Text("Quản lý xét duyệt")
-                .foregroundColor(.black)
-                .bold()
-                .font(.title)
             VStack {
-                if shiperMV.shipers.isEmpty {
-                    Text("Không có ai xét duyệt")
-                        .foregroundColor(.gray)
-                } else {
+                if isLoading {
                     List {
                         ForEach(shiperMV.shipers, id: \.cccd) { shiper in
                             NavigationLink(destination: DetailShiper(shiper: shiper)) {
@@ -27,18 +22,22 @@ struct VerifyShiper: View {
                             }
                         }
                     }
+                } else {
+                    ProgressView("Loading...")
+                }
+            }
+            .navigationBarTitle("Quản lý xét duyệt đơn", displayMode: .inline)
+        }
+        .onAppear {
+            shiperMV.fetchShiperVerifyRealTime { result in
+                if result {
+                    isLoading = true
                 }
             }
         }
-        .onAppear {
-            shiperMV.fetchShiperVerifyRealTime()
-        }
     }
-
-        
     
 }
-
 #Preview {
     VerifyShiper()
 }

@@ -115,10 +115,10 @@ struct SignIn: View {
                     ForgotpasswordView()
                 })
                 .fullScreenCover(isPresented: $isLogin, content: {
-                    HomeShiperView()
+                    TabBarShiperView()
                 })
                 .fullScreenCover(isPresented: $isLoginAdmin, content: {
-                    HomeAdminView()
+                    TabBarAdminView()
                 })
         }.ignoresSafeArea(.all)
            

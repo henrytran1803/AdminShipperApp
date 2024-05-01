@@ -34,7 +34,9 @@ struct ShippingView: View {
                 .font(.title)
             Button(action: {
                 isAdd = true
+                OrderMV().updateOrderStatus(orderID: order.orderId, userID: order.userId)
                 OrderMV().deleteOrder(orderId: order.orderId)
+               
             }, label: {
                 RoundedRectangle(cornerRadius: 5)
                      .frame(width: 300, height: 60)

@@ -78,6 +78,25 @@ struct HomeAdminView: View {
                                 }
                         }
                     }
+                    Section(header: Text("Order")) {
+                        NavigationLink {
+                            AllOrderView()
+                        } label: {
+                            Rectangle()
+                                .frame(width: 320, height: 150)
+                                .foregroundColor(Color.buttonwelcome)
+                                .overlay{
+                                    VStack(alignment: .leading){
+                                        Text("ORDER")
+                                            .bold()
+                                            .font(.title)
+                                            .foregroundColor(.white)
+                                        Text("Quản lý danh mục sản phẩm một các nhânh chóng nhấn vào dể quản lý")
+                                            .foregroundStyle(.white)
+                                    }
+                                }
+                        }
+                    }
                 }
             }
         }

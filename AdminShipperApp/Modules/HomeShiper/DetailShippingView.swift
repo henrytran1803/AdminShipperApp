@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 struct DetailShippingView: View {
     @State var order: Order
-    @State var oder : Oder = Oder(name: "", adress: "", total: 0, discount: 0, date: Timestamp(date: Date()), products: [], status: .done, payment: .applePay)
+    @State var oder : Oder = Oder(name: "", adress: "", total: 0, discount: 0, date: Timestamp(date: Date()), status: .done, payment: .applePay)
     @State var isAcpept = false
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -52,10 +52,12 @@ struct DetailShippingView: View {
             }
             HStack(spacing: 0 ){
                 Text("Ngày dặt: ")
-                Text("\(formattedDate(from: oder.date))")                    .bold()
+                Text("\(formattedDate(from: oder.date))")                    
+                    .bold()
                     .font(.title3)
             }
             Button(action: {
+                OrderMV().addOrder(value: oder)
                 isAcpept = true
             }, label: {
                 RoundedRectangle(cornerRadius: 5)
@@ -69,7 +71,7 @@ struct DetailShippingView: View {
              }).padding()
                 .onAppear{
                     OrderMV().getOrder(userId: order.userId, document: order.orderId){oder in
-                        self.oder = oder ?? Oder(name: "", adress: "", total: 0, discount: 0, date: Timestamp(date: Date()), products: [], status: .done, payment: .applePay)
+                        self.oder = oder ?? Oder(name: "", adress: "", total: 0, discount: 0, date: Timestamp(date: Date()), status: .done, payment: .applePay)
                         
                     }
                 }

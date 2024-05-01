@@ -20,7 +20,9 @@ class ShiperMV: ObservableObject {
     @Published var verifiedShippers: [ShipperVerify] = []
 
     init() {
-        fetchShiperVerifyRealTime()
+        fetchShiperVerifyRealTime(){ result in
+            
+        }
     }
     func findUID(cccd: String, completion: @escaping (String) -> Void){
         Database.database().reference().child("shiper").queryOrdered(byChild: "cccd").queryEqual(toValue: cccd).observeSingleEvent(of: .value) { snapshot in
@@ -60,7 +62,7 @@ class ShiperMV: ObservableObject {
         }
     }
 
-    func fetchShiperVerifyRealTime(){
+    func fetchShiperVerifyRealTime(completion: @escaping (Bool) -> Void){
         Database.database().reference().child("shiper").observe(.value) { snapshot in
             var tempShipers: [Shiper] = []
             
@@ -79,6 +81,8 @@ class ShiperMV: ObservableObject {
             DispatchQueue.main.async {
                 self.shipers = tempShipers
                 self.objectWillChange.send()
+                print(self.shipers)
+                completion(true)
             }
         }
     }
