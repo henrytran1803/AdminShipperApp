@@ -97,6 +97,25 @@ struct HomeAdminView: View {
                                 }
                         }
                     }
+                    Section(header: Text("Thống kê biểu đồ")) {
+                        NavigationLink {
+                            PickDateView()
+                        } label: {
+                            Rectangle()
+                                .frame(width: 320, height: 150)
+                                .foregroundColor(Color.buttonwelcome)
+                                .overlay{
+                                    VStack(alignment: .leading){
+                                        Text("Thống kê biểu đồ")
+                                            .bold()
+                                            .font(.title)
+                                            .foregroundColor(.white)
+                                        Text("Quản lý danh mục sản phẩm một các nhânh chóng nhấn vào dể quản lý")
+                                            .foregroundStyle(.white)
+                                    }
+                                }
+                        }
+                    }
                 }
             }
         }

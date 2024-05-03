@@ -50,6 +50,7 @@
 		D2BA1AF12BDFC846001BD00D /* DetailShippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA1AF02BDFC846001BD00D /* DetailShippingView.swift */; };
 		D2BA1AF42BDFCC8D001BD00D /* ShippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA1AF32BDFCC8D001BD00D /* ShippingView.swift */; };
 		D2BA1AF62BDFCD68001BD00D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA1AF52BDFCD68001BD00D /* MapView.swift */; };
+		D2C5F9472BE50F9E00E69A19 /* PickDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C5F9462BE50F9E00E69A19 /* PickDateView.swift */; };
 		D2CC5E732BDBA1A300D38727 /* AdminShipperAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E722BDBA1A300D38727 /* AdminShipperAppApp.swift */; };
 		D2CC5E752BDBA1A300D38727 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC5E742BDBA1A300D38727 /* ContentView.swift */; };
 		D2CC5E772BDBA1A500D38727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC5E762BDBA1A500D38727 /* Assets.xcassets */; };
@@ -153,6 +154,7 @@
 		D2BA1AF02BDFC846001BD00D /* DetailShippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShippingView.swift; sourceTree = "<group>"; };
 		D2BA1AF32BDFCC8D001BD00D /* ShippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingView.swift; sourceTree = "<group>"; };
 		D2BA1AF52BDFCD68001BD00D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D2C5F9462BE50F9E00E69A19 /* PickDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickDateView.swift; sourceTree = "<group>"; };
 		D2CC5E6F2BDBA1A300D38727 /* AdminShipperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdminShipperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CC5E722BDBA1A300D38727 /* AdminShipperAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminShipperAppApp.swift; sourceTree = "<group>"; };
 		D2CC5E742BDBA1A300D38727 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -262,6 +264,14 @@
 			path = Shipping;
 			sourceTree = "<group>";
 		};
+		D2C5F9452BE50E8E00E69A19 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				D2C5F9462BE50F9E00E69A19 /* PickDateView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 		D2CC5E662BDBA1A300D38727 = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +337,7 @@
 		D2CC5ED62BDBA31F00D38727 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D2C5F9452BE50E8E00E69A19 /* Chart */,
 				D2BA1AF22BDFCC7B001BD00D /* Shipping */,
 				D2A36BF82BDF475D00CB05BC /* Setting */,
 				D2A7A2342BDF313100B0694F /* Verify */,
@@ -647,6 +658,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D252FC722BDCEFDC00E9F2D9 /* ForgotpasswordView.swift in Sources */,
+				D2C5F9472BE50F9E00E69A19 /* PickDateView.swift in Sources */,
 				D2E2574E2BDC8E6200411975 /* HomeShiperView.swift in Sources */,
 				D2E2574C2BDC8E5600411975 /* HomeAdminView.swift in Sources */,
 				D2A7B41D2BE08578004AB6D0 /* ProfileMV.swift in Sources */,

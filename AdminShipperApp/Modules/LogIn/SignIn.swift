@@ -77,14 +77,12 @@ struct SignIn: View {
                         self.alerts = false
                     }
                 }
-                
-                
             }, label: {
                RoundedRectangle(cornerRadius: 5)
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color("buttonwelcome"))
                     .overlay{
-                        Text("SIGN IN")
+                        Text("RESET PASSWORD")
                             .bold()
                             .foregroundColor(.white)
                     }
@@ -93,11 +91,6 @@ struct SignIn: View {
                     () -> Alert in
                         Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))
                     }
-            Button("Show Alert") {
-                self.alertShown = true
-            }.alert(isPresented: $alertShown) { () -> Alert in
-                Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))
-            }
             HStack{
                 Text("Chưa có tài khoản?")
                 Button(action: {openSignUp = true}, label: {

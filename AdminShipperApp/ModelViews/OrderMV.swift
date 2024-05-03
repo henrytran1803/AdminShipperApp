@@ -11,6 +11,7 @@ import FirebaseAuth
 import Firebase
 
 class OrderMV: ObservableObject {
+    @Published var ordersfiller: [Oder] = []
     @Published var orders: [Order] = []
     @Published var ordersShiper: [String: [Order]] = [:]
     func updateShipperForOrder(orderId: String, newShipper: String) {
@@ -178,6 +179,55 @@ class OrderMV: ObservableObject {
             }
         }
     }
+    func fetchOrderBetweenDates(startDate: Timestamp, endDate: Timestamp, completion: @escaping (Bool) -> Void) {
+        let db = Firestore.firestore()
+        let userCollectionRef = db.collection("users")
+
+        userCollectionRef.getDocuments { (querySnapshot, error) in
+            if let error = error {
+                print("Error fetching users: \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+            
+            let dispatchGroup = DispatchGroup()
+            for document in querySnapshot!.documents {
+                print(document.documentID)
+                let userId = document.documentID
+                let orderDocumentRef = db.collection("users").document(userId).collection("orders")
+                orderDocumentRef.whereField("date", isGreaterThanOrEqualTo: startDate)
+                               .whereField("date", isLessThanOrEqualTo: endDate)
+                               .getDocuments { (querySnapshot, error) in
+                    if let error = error {
+                        print("Error fetching orders: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    guard let documents = querySnapshot?.documents else {
+                        print("No documents found")
+                        return
+                    }
+                    
+                  
+                    
+                    for document in documents {
+                        do {
+                                let order: Oder = try document.data(as: Oder.self)
+                            self.ordersfiller.append(order)
+                        } catch let error {
+                            print("Error decoding document: \(error)")
+                        }
+                    }
+                   
+                }
+                
+            }
+            completion(true)
+        }
+        
+        
+    }
+
     func fetchAllOrder(completion: @escaping ([Oder]) -> Void) {
         guard let currentUser = Auth.auth().currentUser else {
             print("No current user")

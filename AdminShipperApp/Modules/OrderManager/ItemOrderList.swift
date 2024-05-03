@@ -24,10 +24,18 @@ struct ItemOrderList: View {
                         Text(order.shiper)
                             .bold()
                             .foregroundStyle(.secondary)
-                        Text("Chưa giao")
-                            .bold()
-                            .foregroundStyle(.secondary)
-                            .foregroundColor(.red)
+                        if order.shiper == "none"{
+                            Text("Chưa giao")
+                                .bold()
+                                .foregroundStyle(.secondary)
+                                .foregroundColor(.red)
+                        }else {
+                            Text("đã có người giao")
+                                .bold()
+                                .foregroundStyle(.secondary)
+                                .foregroundColor(.green)
+                        }
+                        
                     }
                     .padding(.horizontal)
                 }
