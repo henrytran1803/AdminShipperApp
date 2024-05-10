@@ -38,7 +38,7 @@ struct ForgotpasswordView: View {
             }.padding()
  
             Button(action: {
-                
+                AuthViewModel().sendPasswordReset(withEmail: userName)
             }, label: {
                RoundedRectangle(cornerRadius: 5)
                     .frame(width: 300, height: 60)

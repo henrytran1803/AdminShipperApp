@@ -53,8 +53,10 @@ struct DetailCategory: View {
         if self.isNew {
             CategoryMV().addCategory(value: category.category, name: category.name)
         }else {
-            CategoryMV().updateCategoryName(oldName: name, newName: category.name)
             CategoryMV().updateCategory(value: category.category, name: category.name)
+            if name != category.name {
+                CategoryMV().updateCategoryName(oldName: name, newName: category.name)
+            }
         }
     }
     

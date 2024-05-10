@@ -68,6 +68,10 @@ struct OrderDetail: View {
         }.onAppear{
             shiperMV.fetchVerifiedShippers()
         }
+        .onDisappear{
+            shiperMV.verifiedShippers = []
+        }
+       
     }
 }
 

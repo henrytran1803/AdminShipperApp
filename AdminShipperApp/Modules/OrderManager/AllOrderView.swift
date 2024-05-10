@@ -11,7 +11,7 @@ import UIKit
 
 struct AllOrderView: View {
     @ObservedObject var orderMV: OrderMV = OrderMV()
-    @State var orders: [Oder] = [] // Đã sửa tên của Oder thành Order
+    @State var orders: [Oder] = []
     @ObservedObject var viewModel = PDFCreator()
 
     var body: some View {
@@ -52,22 +52,12 @@ struct AllOrderView: View {
 }
 
 
-struct ActivityViewController: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UIActivityViewController
 
-    let activityItems: [Any]
-
-    func makeUIViewController(context: Context) -> UIActivityViewController {
-        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-        return activityViewController
-    }
-
-    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
-}
 
 #Preview {
     AllOrderView()
 }
+
 struct ActivityView: UIViewControllerRepresentable {
     typealias UIViewControllerType = UIActivityViewController
     
@@ -80,4 +70,13 @@ struct ActivityView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
         
     }
+}
+struct ActivityViewController: UIViewControllerRepresentable {
+    typealias UIViewControllerType = UIActivityViewController
+    let activityItems: [Any]
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        return activityViewController
+    }
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }

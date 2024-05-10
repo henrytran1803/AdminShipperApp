@@ -82,7 +82,7 @@ struct SignIn: View {
                     .frame(width: 300, height: 60)
                     .foregroundColor(Color("buttonwelcome"))
                     .overlay{
-                        Text("RESET PASSWORD")
+                        Text("SIGN IN")
                             .bold()
                             .foregroundColor(.white)
                     }

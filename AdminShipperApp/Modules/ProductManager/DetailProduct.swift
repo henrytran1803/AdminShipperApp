@@ -94,8 +94,11 @@ struct DetailProduct: View {
                     product.categoryName = category[selectedCategoryIndex]
                     ProductMV().addProduct(value: self.product, category: product.categoryName)
                 }else {
+                    
                     product.categoryName = category[selectedCategoryIndex]
+                    
                     ProductMV().addNewProductAndDeleteOld(value: product, categoryName: product.categoryName, oldName: nameproduct, categoryOld: namecate)
+                    
                 }
             }, label: {
                 RoundedRectangle(cornerRadius: 5)

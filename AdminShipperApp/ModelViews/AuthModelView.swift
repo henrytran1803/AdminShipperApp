@@ -202,4 +202,10 @@ class AuthViewModel: ObservableObject {
         UserDefaults.standard.set("", forKey: "verify")
         try? Auth.auth().signOut()
     }
+    func sendPasswordReset(withEmail email: String, _ callback: ((Error?) -> ())? = nil){
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            callback?(error)
+        }
+    }
+
 }

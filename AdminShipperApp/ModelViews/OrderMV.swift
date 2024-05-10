@@ -288,10 +288,11 @@ class OrderMV: ObservableObject {
         }
         
         let db = Firestore.firestore()
-        let userId = currentUser.uid
+        let userIds = currentUser.uid
+        let userDocumentRef = db.collection("usersshiper").document(userIds)
         
-        let userDocumentRef = db.collection("usersshiper").document(userId)
         let orderDocumentRef = userDocumentRef.collection("orders").document(orderID)
+        
         let userorderRef = db.collection("users").document(userID).collection("orders").document(orderID)
         
         userorderRef.updateData(["status": "done"]) { error in

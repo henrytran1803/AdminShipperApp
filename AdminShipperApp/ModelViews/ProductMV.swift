@@ -27,21 +27,23 @@ class ProductMV : ObservableObject {
     func addNewProductAndDeleteOld(value: Product, categoryName: String, oldName: String, categoryOld: String) {
         let db = Firestore.firestore()
         let newCollectionRef = db.collection("categories").document(categoryName).collection("product").document()
-        do {
-            let newDocReference = try newCollectionRef.setData(from: value)
-            print("Book stored with new document reference: \(newDocReference)")
-            deleteProduct(name: oldName, categoryOld: categoryOld){ result in
-                if result {
-                    print("deleteoke")
-                }else {
-                    print("deletnoteoke")
+        
+        deleteProduct(name: oldName, categoryOld: categoryOld) { result in
+            if result {
+                print("Deleted old product successfully")
+                
+                do {
+                    let newDocReference = try newCollectionRef.setData(from: value)
+                    print("New product stored with new document reference: \(newDocReference)")
+                } catch {
+                    print("Error storing new product: \(error)")
                 }
+            } else {
+                print("Failed to delete old product")
             }
-          }
-          catch {
-            print(error)
-          }
+        }
     }
+
 
     func deleteProduct(name: String, categoryOld: String, completion: @escaping (Bool) -> Void) {
         let db = Firestore.firestore()

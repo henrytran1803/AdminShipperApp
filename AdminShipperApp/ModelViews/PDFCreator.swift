@@ -20,7 +20,6 @@ class PDFCreator: ObservableObject {
         }
 
         DispatchQueue.global().async {
-            // Tạo PDF từ dữ liệu
             let pdfMetaData = [
                 kCGPDFContextCreator: "AppOrderFood",
                 kCGPDFContextAuthor: "author name"
@@ -40,7 +39,6 @@ class PDFCreator: ObservableObject {
                 }
             }
 
-            // Lưu PDF vào local
             guard let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
             let pdfPath = documentsPath.appendingPathComponent("output.pdf")
             try? data.write(to: pdfPath)
