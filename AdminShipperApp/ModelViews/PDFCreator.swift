@@ -34,8 +34,8 @@ class PDFCreator: ObservableObject {
                 for order in data {
                     context.beginPage()
 
-                    let orderInfo = "Order ID: \(order.hashValue)\nCustomer: \(order.name)\nTotal: \(order.total)\nAdress: \(order.adress)"
-                    orderInfo.draw(in: CGRect(x: 20, y: 20, width: pageSize.width - 40, height: pageSize.height - 40), withAttributes: nil)
+                    let orderInfo = order.orderDescription()
+                    orderInfo.draw(in: CGRect(x: 20, y: 20, width: pageSize.width - 40, height: pageSize.height - 40))
                 }
             }
 
@@ -48,5 +48,38 @@ class PDFCreator: ObservableObject {
                 self.showShareSheet = true
             }
         }
+    }
+}
+extension Oder {
+    func orderDescription() -> NSAttributedString {
+        let boldAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 12)]
+        
+        let description = NSMutableAttributedString()
+        
+        description.append(NSAttributedString(string: "Order ID: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.hashValue)\n"))
+        
+        description.append(NSAttributedString(string: "Customer: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.name)\n"))
+        
+        description.append(NSAttributedString(string: "Total: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.total)\n"))
+        
+        description.append(NSAttributedString(string: "Address: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.adress)\n"))
+        
+        description.append(NSAttributedString(string: "Discount: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.discount)\n"))
+        
+        description.append(NSAttributedString(string: "Date: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.date)\n"))
+        
+        description.append(NSAttributedString(string: "Status: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.status.rawValue)\n"))
+        
+        description.append(NSAttributedString(string: "Payment: ", attributes: boldAttributes))
+        description.append(NSAttributedString(string: "\(self.payment)\n"))
+        
+        return description
     }
 }
