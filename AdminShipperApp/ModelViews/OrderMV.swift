@@ -203,16 +203,14 @@ class OrderMV: ObservableObject {
                         return
                     }
                     
-                    guard let documents = querySnapshot?.documents else {
-                        print("No documents found")
-                        return
-                    }
-                    
-                  
+                                   guard let documents = querySnapshot?.documents else {
+                                       print("No documents found")
+                                       return
+                                   }
                     
                     for document in documents {
                         do {
-                                let order: Oder = try document.data(as: Oder.self)
+                            let order: Oder = try document.data(as: Oder.self)
                             self.ordersfiller.append(order)
                         } catch let error {
                             print("Error decoding document: \(error)")

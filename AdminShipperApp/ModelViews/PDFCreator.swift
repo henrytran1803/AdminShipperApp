@@ -33,7 +33,6 @@ class PDFCreator: ObservableObject {
             let data = renderer.pdfData { context in
                 for order in data {
                     context.beginPage()
-
                     let orderInfo = order.orderDescription()
                     orderInfo.draw(in: CGRect(x: 20, y: 20, width: pageSize.width - 40, height: pageSize.height - 40))
                 }
